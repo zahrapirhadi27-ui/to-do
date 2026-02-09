@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <title>to-do</title>
+  </head>
+  <body
+    class="flex justify-center items-center bg-[#f1f3f5] h-screen font-sans p-5"
+  >
+    <div class="bg-[#fff] rounded-xl shadow-lg">
+      <section
+        class="bg-[#7749f8] py-5 px-[25px] text-white  h-[99px] rounded-t-xl"
+      >
+        <h1 class="text-2xl font-semibold mb-[5px]">My Tasks</h1>
+        <p class="text-[14px] opacity-[0.9]">Sunday, Feb 8</p>
+      </section>
+      <section
+        class="py-5 px-[25px] bg-[#f8f9fa] border-b-[1px] border-b-[#e9ecef]"
+      >
+        <input
+          type="text"
+          placeholder="What do you need to do?"
+          class="w-[400px] h-[44px] p-3.5 text-[16px] bg-white rounded-[6px] border-[1px] border-[#dee2e6] transition-all duration-200"
+        />
+        <button
+          class="w-10 h-10 bg-[#7749f8] text-white rounded-[6px] mx-[5px] transition-all duration-200 cursor-pointer text-2xl font-semibold p-b-[10px] hover:bg-[#9775fa]"
+        >
+          +
+        </button>
+      </section>
+      <section class="border-b-[1px] border-b-[#e9ecef] px-6 py-3.5">
+        <span
+          class="border-b-[2px] border-b-[#7749f8] px-[3px] py-[5px] text-[#868e96] text-[16px] font-medium cursor-pointer transition-all duration-200 hover:text-[#7749f8]"
+          >All</span
+        >
+      </section>
+      <section
+        class="w-[500px] h-[30px] border-b-[1px] border-b-[#e9ecef] py-[15px]"
+      ></section>
+      <section
+        class="flex justify-between items-center text-[#868e96] text-[14px] font-normal rounded-b-[12px] bg-[#f8f9fa] py-4 px-6"
+      >
+        <p>0 items left</p>
+        <button class="cursor-pointer  transition-all duration-200  hover:text-[#fa5252]">
+          Clear completed
+        </button>
+      </section>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
